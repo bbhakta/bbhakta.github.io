@@ -21,8 +21,18 @@ function blink() {
     document.getElementById("image").style.visibility = isVisible;
 
     // Repeat the process every 2 seconds.
-    setTimeout(blink, 2000);
+    setTimeout(blink, 9000);
+
+    document.getElementById("image".mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
 }
+}
+
+
+
+
 blink();
 
 </script>
