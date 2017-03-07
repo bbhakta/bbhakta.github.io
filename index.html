@@ -3,23 +3,31 @@ hello world!!!
 <!DOCTYPE html>
 <html>
 
-<script>
-
-var hidden = false;
-setInterval(function(){
-    document.getElementById("a").style.visibility= hidden ? "visible" : "hidden";
-    hidden = !hidden;
-},2000);
-</script>
 
 
-<body>
+
+<body> onload="blink()"
 
 
 <h2>Spectacular Mountain</h2>
 <img src="a.jpg" width = "200" height = "300"/>
 
 
+var isVisible = "visible";
+
+<script>
+function blink() {
+    // Toggle the position.
+    if(isVisible == "visible") isVisible = "hidden";
+    else                       isVisible = "visible";
+
+    // Update it.
+    document.getElementById("a").style.visibility = isVisible;
+
+    // Repeat the process every 2 seconds.
+    setTimeout(blink, 2000);
+}
+</script>
 
 </body>
 </html>
