@@ -4,6 +4,11 @@ hello world!!!
 <html>
 <body onload="blink()">
 
+
+<div align="center">
+<img src="a.jpg"  id="image"  width = "200" height = "300"/>
+</div>
+
 <script>
 
 var isVisible = "visible";
@@ -13,7 +18,7 @@ function blink() {
     else                       isVisible = "visible";
 
     // Update it.
-    document.getElementById("a").style.visibility = isVisible;
+    document.getElementById("image").style.visibility = isVisible;
 
     // Repeat the process every 2 seconds.
     setTimeout(blink, 2000);
@@ -21,13 +26,6 @@ function blink() {
 blink();
 
 </script>
-
-
-<div align="center">
-<img src="a.jpg" width = "200" height = "300"/>
-</div>
-
-
 
 
 
